@@ -1,0 +1,6 @@
+# default value is recommended for github instead of actual credentials
+[Postgres]
+Host = 'localhost'
+DB = 'postgres'
+User = 'airflow'
+Password = 'airflow'

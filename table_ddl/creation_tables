@@ -1,0 +1,39 @@
+DROP TABLE IF EXISTS sales;
+DROP TABLE IF EXISTS customers;
+DROP TABLE IF EXISTS products;
+
+
+CREATE TABLE products (
+	id serial NOT NULL,
+	item varchar(150) NOT NULL,
+	manufacturer varchar(150) NOT NULL,
+	cost int4 NOT NULL,
+	weight int4 NOT NULL,
+	CONSTRAINT products_pkey PRIMARY KEY (id)
+);
+
+CREATE TABLE customers (
+	id serial NOT NULL,
+	firstname varchar(150) NOT NULL,
+	lastname varchar(150) NOT NULL,
+	email varchar(150) NOT NULL,
+	dob date NOT NULL,
+	mobile char(8) NOT NULL,
+	memberid varchar(150) NOT NULL,
+	CONSTRAINT customers_pkey PRIMARY KEY (id)
+);
+
+CREATE TABLE sales (
+	id serial NOT NULL,
+	customer_id int4 NOT NULL,
+	product_id int4 NOT NULL,
+	quantity int2 NOT NULL,
+	revenue int4 not NULL,
+	CONSTRAINT Sales_pkey PRIMARY KEY (id),
+	CONSTRAINT fk_customer
+      FOREIGN KEY(customer_id) 
+	  REFERENCES customers(id),
+	CONSTRAINT fk_product
+      FOREIGN KEY(product_id) 
+	  REFERENCES products(id)
+);
