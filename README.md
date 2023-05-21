@@ -2,19 +2,19 @@
 
 ## Section 1: Data Pipelines
 
-# Processed Dataset : 
+### Processed Dataset : 
 Found in the folders `reject_dataset` and `success_dataset`
-# Scripts: `process_dataset.py`
+### Scripts: `process_dataset.py`
 
 ---
 
 ## Section 2: Databases
 
-# Docker container build:
+### Docker container build:
  `posttgres.yml`
-# DDL Statement: 
+### DDL Statement: 
 `table_ddl\creation_tables`
-# Entity-Relationship diagrams: 
+### Entity-Relationship diagrams: 
 ![alt text](https://github.com/paulwija-work/DETechAssessment-23/blob/main/postgres_tables.png?raw=true)
 
 ```
@@ -41,7 +41,7 @@ limit 3
 ---
 
 ## Section 3: System Design
-# Assumption:
+### Assumption:
 
 ```
 - A scheduler has been set up in the cloud environment to purge images and its metadata that exceed 7 days mark
@@ -49,19 +49,19 @@ limit 3
 - cloud computing can be a small scale opertaion as the database should be stored in a RDS and a load balancer has already been created to control the traffic of the api in order to not overload the system.
 ```
 
-# End-to-End flow : 
+### End-to-End flow : 
 ![alt text]https://github.com/paulwija-work/DETechAssessment-23/blob/main/System%20Design.png?raw=true)
 
 
 ---
 ## Section 4: Charts & APIs
 
-# Issue:
+### Issue:
 Data cannot be found as the API is not longer accessible and also inexperience in API
 ---
 
 
 ## Section 5: Machine Learning
 
-# Issue:
+### Issue:
 Inexperience in Machine Learning
