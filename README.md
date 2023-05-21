@@ -17,9 +17,8 @@ Found in the folders `reject_dataset` and `success_dataset`
 ### Entity-Relationship diagrams: 
 ![alt text](https://github.com/paulwija-work/DETechAssessment-23/blob/main/postgres_tables.png?raw=true)
 
+### SQL Questions
 ```
-SQL Questions
-
 1. Which are the top 10 members by spending
 
 select  customer_id , sum(revenue) as total_revenue
@@ -50,7 +49,7 @@ limit 3
 ```
 
 ### End-to-End flow : 
-![alt text]https://github.com/paulwija-work/DETechAssessment-23/blob/main/System%20Design.png?raw=true)
+![alt text](https://github.com/paulwija-work/DETechAssessment-23/blob/main/System%20Design.png?raw=true)
 
 
 ---
